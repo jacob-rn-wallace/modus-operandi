@@ -26,7 +26,7 @@ that gets renamed to `README.md` in each derived project. Every section,
 heading, and placeholder is intentional. Do not reorder sections or rename
 headings without a clear reason; consistency across projects is the goal.
 
-**`CONTRIBUTING.md`** — contribution guidelines template. Section order:
+**`CONTRIBUTING.template.md`** — contribution guidelines template. Section order:
 code of conduct → current needs → per-type contribution workflow → file naming
 and directory conventions → measurements guidance → license agreement.
 

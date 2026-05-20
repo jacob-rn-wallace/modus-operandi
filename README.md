@@ -24,7 +24,7 @@ modus-operandi/
 ├── .github/
 │   └── ISSUE_TEMPLATE/
 │       └── contributing-finding.md   # Issue template for contributions
-├── CONTRIBUTING.md                   # Contribution guidelines (fill in)
+├── CONTRIBUTING.template.md          # Contribution guidelines (fill in)
 ├── LICENSE-DOCUMENTATION             # CC BY 4.0 (documentation)
 ├── LICENSE-FIRMWARE                  # GPL-3.0 (firmware and software)
 ├── LICENSE-HARDWARE                  # CERN-OHL-S-2.0 (hardware designs)
@@ -42,7 +42,7 @@ modus-operandi/
 
 The default directories cover the most common cases. Projects vary
 significantly — rename, add, or remove directories as needed and update
-`README.template.md` and `CONTRIBUTING.md` to match. Some examples from
+`README.template.md` and `CONTRIBUTING.template.md` to match. Some examples from
 existing projects:
 
 - A robotics project may split `hardware/` into `electrical/` and
@@ -50,7 +50,7 @@ existing projects:
 - A software-heavy project may not need `hardware/` or `parts/` at all
 - A vehicle project may add `diagnostics/` and `safety/`
 
-Whatever structure you choose, keep `CONTRIBUTING.md` in sync so contributors
+Whatever structure you choose, keep `CONTRIBUTING.template.md` in sync so contributors
 know where to put things.
 
 ---
