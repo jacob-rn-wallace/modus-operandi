@@ -1,4 +1,4 @@
-# restoration-template
+# modus-operandi
 
 A template repository for open source preservation, restoration, and reverse
 engineering projects.
@@ -20,7 +20,7 @@ engineering projects.
 ## Repository structure
 
 ```
-restoration-template/
+modus-operandi/
 ├── .github/
 │   └── ISSUE_TEMPLATE/
 │       └── contributing-finding.md   # Issue template for contributions
