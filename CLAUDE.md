@@ -1,61 +1,65 @@
 # CLAUDE.md — modus-operandi
 
-This is a template repository. It contains no product-specific content.
-Its purpose is to provide a consistent starting structure for open source
-preservation, restoration, and reverse engineering projects.
+modus-operandi is a template repository for open source preservation,
+restoration, and reverse engineering projects. It is not a product project
+itself — it is the common foundation that product projects are derived from.
 
 ---
 
-## What this repository is
+## How to work on this repository
 
-modus-operandi is the common foundation for a family of restoration projects
-including Millennium (Logitech MX1000) and Michiyuki (Tomy i-SOBOT). It
-defines shared conventions for structure, documentation style, licensing, and
-contribution workflow.
+Changes here are changes to the template, not to any derived project. Before
+editing any file, ask: does this change reflect a convention that should apply
+to all derived projects, or is it specific to one? If the latter, it belongs
+in that project's repository, not here.
 
-When starting a new project from this template, the expectation is that
-directory structure, file naming, license model, README voice, and
-CONTRIBUTING.md format all remain consistent with this baseline unless there
-is a domain-specific reason to diverge.
-
----
-
-## Repository contents
-
-- `README.template.md` — the canonical project README template; renamed to
-  `README.md` in each derived project
-- `CONTRIBUTING.md` — contribution guidelines template
-- `.github/ISSUE_TEMPLATE/contributing-finding.md` — issue template for
-  physical documentation contributions
-- `LICENSE-DOCUMENTATION` — CC BY 4.0 (documentation)
-- `LICENSE-FIRMWARE` — GPL-3.0 (firmware and software)
-- `LICENSE-HARDWARE` — CERN-OHL-S-2.0 (hardware designs)
-- `docs/`, `hardware/`, `software/`, `parts/`, `references/` — default
-  directory structure; adapted per project
+When updating the template, derived projects are not automatically updated —
+changes are applied to new projects going forward and backported to existing
+ones manually.
 
 ---
 
-## Conventions this template encodes
+## Files and what they are
 
-**Naming:** files lowercase with hyphens. Directories lowercase, single word
-where possible.
+**`README.template.md`** — the canonical project README. This is the file
+that gets renamed to `README.md` in each derived project. Every section,
+heading, and placeholder is intentional. Do not reorder sections or rename
+headings without a clear reason; consistency across projects is the goal.
 
-**README structure:** Project Name → vision → design philosophy → [components]
-→ repository structure → current status → contributing → prior art → license
-→ trademark disclaimer. Do not reorder sections without updating this template.
+**`CONTRIBUTING.md`** — contribution guidelines template. Section order:
+code of conduct → current needs → per-type contribution workflow → file naming
+and directory conventions → measurements guidance → license agreement.
 
-**License model:** all projects in this family use the same three-way split —
-CERN-OHL-S-2.0 for hardware, GPL-3.0 for firmware and software, CC BY 4.0 for
-documentation. Do not substitute other licenses without updating all derived
-projects.
+**`.github/ISSUE_TEMPLATE/contributing-finding.md`** — issue template for
+physical documentation contributions (measurements, photography, sourcing,
+protocol capture).
 
-**Tone:** direct and technical. README intentionally avoids implementation
-specifics — those belong in their respective directories, not the top-level
-README.
+**`LICENSE-DOCUMENTATION`**, **`LICENSE-FIRMWARE`**, **`LICENSE-HARDWARE`** —
+full license texts. Do not edit these. CC BY 4.0, GPL-3.0, and CERN-OHL-S-2.0
+respectively.
 
-**CONTRIBUTING.md structure:** code of conduct → current needs → per-type
-workflow → file naming and directory conventions → measurements guidance →
-license agreement.
+**`docs/`**, **`hardware/`**, **`software/`**, **`parts/`**, **`references/`**
+— default directory structure. Each contains a `.gitkeep`. These are the
+starting point; derived projects rename and extend as needed.
+
+---
+
+## Conventions
+
+**File naming:** lowercase with hyphens. Example: `main-pcb-top.jpg`, not
+`Main PCB Top.jpg` or `main_pcb_top.jpg`.
+
+**Directory naming:** lowercase, single word where possible.
+
+**Placeholders:** all template placeholders use `[BRACKETED UPPERCASE]` format.
+When searching for unfilled placeholders in a derived project, grep for `\[`.
+
+**License model:** CERN-OHL-S-2.0 for hardware, GPL-3.0 for firmware and
+software, CC BY 4.0 for documentation. This is fixed across all projects in
+the family — do not substitute.
+
+**README tone:** direct and technical. The top-level README intentionally
+avoids implementation specifics; those belong in their respective directories.
 
 ---
 
@@ -66,4 +70,4 @@ license agreement.
 | Millennium | Logitech MX1000 | jacob-rn-wallace/millennium |
 | Michiyuki | Tomy i-SOBOT | jacob-rn-wallace/michiyuki |
 
-Update this table when new projects are started from the template.
+Update this table when a new project is started from the template.
